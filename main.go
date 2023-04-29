@@ -14,6 +14,7 @@ func main() {
 
   router.GET("/auth", func(context *gin.Context) {
     context.JSON(200, gin.H{"username": "username1"})
+    context.JSON(http.StatusOK, gin.H{"userid": "userid"})
   })
 
   err := router.Run(":81")
