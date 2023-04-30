@@ -3,10 +3,13 @@ package main
 import (
   "net/http"
   "github.com/gin-gonic/gin"
+  "/models"
 )
 
 func main() {
   router := gin.Default()
+
+  models.ConnectDB()
 
   router.GET("/", func(context *gin.Context) {
     context.JSON(http.StatusOK, gin.H{"data": "hello world"})
