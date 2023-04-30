@@ -1,0 +1,9 @@
+// models/user.go
+
+package models
+
+type User struct {
+  ID		uint	`json:"id" gorm:"primary_key"`
+  Name		string	`json:"name"`
+  WalletID	uint	`json:"walletid"`
+}
