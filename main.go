@@ -3,7 +3,7 @@ package main
 import (
   "net/http"
   "github.com/gin-gonic/gin"
-  "/models"
+  "github.com/lam-nya/dbdGoBack/models"
 )
 
 func main() {

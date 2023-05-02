@@ -12,7 +12,7 @@ var DB *gorm.DB
 func ConnectDB() {
 	
 	// refer https://github.com/go-sql-driver/mysql#dsn-data-source-name for details
-	dsn := "dbdUser1:hY3aW0wR4zoP4sV9pG7w@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "dbdUser1:hY3aW0wR4zoP4sV9pG7w@tcp(kairet.ru:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
 	database, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {
